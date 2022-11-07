@@ -40,6 +40,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
     def test_lisaa_varastoon1(self):
+        # muutos
         self.varasto.lisaa_varastoon(-1)
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 10)
     def test_lisaa_varastoon2(self):
