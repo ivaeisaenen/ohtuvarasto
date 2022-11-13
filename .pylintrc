@@ -2,6 +2,8 @@
 
 ignore=tests,index.py
 
+load-plugins=pylint.extensions.mccabe
+
 [MESSAGE CONTROL]
 
 disable=raw-checker-failed,
@@ -18,8 +20,17 @@ disable=raw-checker-failed,
 
 [FORMAT]
 
+max-line-length=80
+
 [REFACTORING]
+
+max-nested-blocks=2
+max-complexity=3
+
+enable=too-many-nested-blocks
+
 
 [DESIGN]
 
 max-args=4
+max-statements:15
